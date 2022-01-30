@@ -8,6 +8,7 @@
     <meta name="keywords" content="mysmis, pocu, fonduri europene, formare profesionala, start-up, startup">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Transeth binds all the experts required for transitioning analog organizations into the ethereal realm">
     <meta name="author" content="Transeth Cluser">
     <title>Transeth</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" async>
@@ -29,6 +30,13 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <style>
+        @media (max-width: 1000px) {
+            video {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
 <body style=" overflow: hidden; margin:0px !important; background-color:black">
     <div class="site-wrapper video-background">
@@ -54,9 +62,13 @@
             </div>
             <div class="cover-container" style="cursor:default">
                 <div class="inner cover">
-                    <h1 class="cover-heading"> <i class="fa fa-rocket fa-fw" style="margin-right:5px; width:50px !important; min-height:2px;"></i>LAUNCHING SOON</h1>
-                    <p class="lead">Transeth binds all the experts required for transitioning analog organizations into the ethereal realm</p>
-                    <div id="clock" style="min-height:220px"></div>
+                    <div style="width:100%; float:left"><img src="./screenshots/logo.png" id="logo" style="width:100px; margin-bottom:40px; margin-top:-120px;" /></div>
+                    <p style="height:110px; margin-top:40px; font-size:24px;" class="txt-rotate lead"
+                       data-period="2000"
+                       data-rotate='[ "We connect the experts needed for the transition of analog organizations to the etheric realm", "We develop, document and support the open source code of the Transeth ecosystem", "We help organizations become carbon neutral by digitizing processes", "We offer organizations a smart advantage and interconnection so that it can thrive","We eliminate intermediaries for Transeth ecosystem beneficiaries by implementing specific blockchain solutions","We promote and develop global cluster-oriented policies in the field of IT&C","If we raised your interest continue exploring Transeth ecosystem \\m/" ]'></p>
+                    <a href="./faq.html">
+                        <p id="continua_btn" style="border-radius: 25px; margin: auto; width: 140px; border: 3px solid white; padding: 10px; font-family: Roboto, sans-serif; font-weight: 500; font-size: 24px; ">Continue</p>
+                    </a>
                 </div>
                 <div class="mastfoot">
                     <div class="inner">
@@ -64,12 +76,14 @@
                 </div>
             </div>
             <div style="position: absolute; bottom: -20px; width:100%;">
-                <a href="./../screenshots/Transeth MPN letter.pdf" target="_blank">
-                    <img src="./../screenshots/Transeth MPN.png" style=" display: block; margin-left: auto; margin-right: auto; width: 400px; " />
+                <a id="msft_url" href="./screenshots/Transeth MPN letter.pdf" target="_blank">
+                    <img src="./screenshots/Transeth MPN.png" style=" display: block; margin-left: auto; margin-right: auto; width: 400px; " />
                 </a>
             </div>
         </div>
+
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script src="./js/device.min.js" defer></script>
     <script src="./js/jquery.countdown.min.js"></script>
@@ -82,43 +96,121 @@
                 padding-left: 0px;
                 padding-right: 0px;
             }
+
             li {
-                margin-left:15px !important;                
+                margin-left: 15px !important;
             }
+
             .lead {
                 padding-left: 10px;
                 padding-right: 10px;
             }
-        }
-    </style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6T9BGDM4"></script>
-<script>
-    $(document).ready(function () {
-        var thisLanguage = 'en';
-        var userLang = navigator.language || navigator.userLanguage;
-	console.log("navigator.language", navigator.language);
-	console.log("navigator.userLanguage", navigator.userLanguage);
-        if (userLang != thisLanguage) {
-            $(".site-wrapper").hide();
-            switch (userLang) {
-                case 'ro-RO':
-                    window.location.href = window.location.origin + '/ro';
-                    break;
-                case 'ro':
-                    window.location.href = window.location.origin + '/ro';
-                    break;
-                default:
-                    $(".site-wrapper").show();
-                    break;
+
+            #logo {
+                margin-top: -40px !important;
             }
 
-        }
-    });
+            #continua_btn {
+                margin-top: 160px !important;
+            }
 
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QF6T9BGDM4');
-</script>
+            video {
+                display: none !important;
+            }
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6T9BGDM4"></script>
+    <script>
+        $(document).ready(function () {
+            var thisLanguage = 'en';
+            var userLang = navigator.language || navigator.userLanguage;           
+            if (userLang != thisLanguage) {
+                $(".site-wrapper").hide();
+                switch (userLang) {
+                    case 'ro-RO':
+                        window.location.href = window.location.origin + '/ro';
+                        break;
+                    case 'ro':
+                        window.location.href = window.location.origin + '/ro';
+                        break;
+                    default:
+                        $(".site-wrapper").show();
+                        break;
+                }
+
+            }
+        });
+
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-QF6T9BGDM4');
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $("#msft_url").attr("href", "https://appsource.microsoft.com/en-us/marketplace/partner-dir/61cd44ba-1a86-46fc-92ab-5f92fc8df032/overview")
+        }
+
+
+        setTimeout(function () {
+
+            var TxtRotate = function (el, toRotate, period) {
+                this.toRotate = toRotate;
+                this.el = el;
+                this.loopNum = 0;
+                this.period = parseInt(period, 10) || 2000;
+                this.txt = '';
+                this.tick();
+                this.isDeleting = false;
+            };
+
+            TxtRotate.prototype.tick = function () {
+                var i = this.loopNum % this.toRotate.length;
+                var fullTxt = this.toRotate[i];
+
+                if (this.isDeleting) {
+                    this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                    this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+
+                this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+                var that = this;
+                var delta = 30;
+
+                if (this.isDeleting) { delta /= 10; }
+
+                if (!this.isDeleting && this.txt === fullTxt) {
+                    delta = this.period;
+                    this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === '') {
+                    this.isDeleting = false;
+                    this.loopNum++;
+                    delta = 500;
+                }
+
+                setTimeout(function () {
+                    that.tick();
+                }, delta);
+            };
+
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #fff }";
+            document.body.appendChild(css);
+
+        }, 2000);
+
+    </script>
 </body>
 </html>
