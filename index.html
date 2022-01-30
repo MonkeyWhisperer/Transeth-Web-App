@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="Transeth este o platforma on-line de gestionarea integrată a proiectelor POCU. Prin procesele și automatismele implementate in cadrul acestei solutii de management al proiectelor, raspundem cerintelor formulate in cadrul Uniunii Europene.">
+    <meta name="keywords" content="mysmis, pocu, fonduri europene, formare profesionala, start-up, startup">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="author" content="Transeth Cluser">
+    <title>Transeth</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" async>
+    <link href="./css/style.min.css" rel="stylesheet" async>
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body style=" overflow: hidden; margin:0px !important; background-color:black">
+    <div class="site-wrapper video-background">
+        <video src="./videos/load.mp4" autoplay muted id="myVideo"></video>
+        <div class="overlay"></div>
+        <div class="site-wrapper-inner">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="https://www.linkedin.com/company/transeth-cluster" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                            <li style="margin-left:12px"><a href="https://github.com/Transeth" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://appsource.microsoft.com/en-us/marketplace/partner-dir/61cd44ba-1a86-46fc-92ab-5f92fc8df032/overview" target="_blank"><i class="fab fa-microsoft"></i></a></li>
+                            <li><a href="https://discord.gg/DNyG4Ea9hM" target="_blank"><i class="fab fa-discord"></i></a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=org.Transeth.Cluster" target="_blank"><i class="fab fa-google-play"></i></a></li>
+                            <!--<li><a href="#"><i class="fab fa-ethereum"></i></a></li>-->
+                            <li><a href="https://dao.transeth.org/#/" target="_blank"><i class="fas fa-balance-scale"></i></a></li>
+                            <li><a href="./faq.html"><i class="far fa-question-circle"></i></a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="cover-container" style="cursor:default">
+                <div class="inner cover">
+                    <h1 class="cover-heading"> <i class="fa fa-rocket fa-fw" style="margin-right:5px; width:50px !important; min-height:2px;"></i>LAUNCHING SOON</h1>
+                    <p class="lead">Transeth binds all the experts required for transitioning analog organizations into the ethereal realm</p>
+                    <div id="clock" style="min-height:220px"></div>
+                </div>
+                <div class="mastfoot">
+                    <div class="inner">
+                    </div>
+                </div>
+            </div>
+            <div style="position: absolute; bottom: -20px; width:100%;">
+                <a href="./../screenshots/Transeth MPN letter.pdf" target="_blank">
+                    <img src="./../screenshots/Transeth MPN.png" style=" display: block; margin-left: auto; margin-right: auto; width: 400px; " />
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="./js/device.min.js" defer></script>
+    <script src="./js/jquery.countdown.min.js"></script>
+    <script src="./js/custom.min.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,500&display=swap' rel="stylesheet" as="font" type='text/css'>
+    <script src="https://kit.fontawesome.com/295455a59a.js" crossorigin="anonymous"></script>
+    <style>
+        @media (max-width: 1000px) {
+            .inner {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            li {
+                margin-left:15px !important;                
+            }
+            .lead {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6T9BGDM4"></script>
+<script>
+    $(document).ready(function () {
+        var thisLanguage = 'en';
+        var userLang = navigator.language || navigator.userLanguage;
+	console.log("navigator.language", navigator.language);
+	console.log("navigator.userLanguage", navigator.userLanguage);
+        if (userLang != thisLanguage) {
+            $(".site-wrapper").hide();
+            switch (userLang) {
+                case 'ro-RO':
+                    window.location.href = window.location.origin + '/ro';
+                    break;
+                case 'ro':
+                    window.location.href = window.location.origin + '/ro';
+                    break;
+                default:
+                    $(".site-wrapper").show();
+                    break;
+            }
+
+        }
+    });
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QF6T9BGDM4');
+</script>
+</body>
+</html>
