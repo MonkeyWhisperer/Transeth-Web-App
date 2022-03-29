@@ -41,24 +41,7 @@
         }
     </style>
 
-    <!--/Start async trafic.ro/-->
-    <script type="text/javascript" id="trfc_trafic_script">
-        //<![CDATA[
-        t_rid = 'transeth-org';
-        (function () {
-            t_js_dw_time = new Date().getTime();
-            t_js_load_src = ((document.location.protocol == 'http:') ? 'http://storage.' : 'https://secure.') + 'trafic.ro/js/trafic.js?tk=' + (Math.pow(10, 16) * Math.random()) + '&t_rid=' + t_rid;
-            if (document.createElement && document.getElementsByTagName && document.insertBefore) {
-                t_as_js_en = true; var sn = document.createElement('script'); sn.type = 'text/javascript'; sn.async = true; sn.src = t_js_load_src;
-                var psn = document.getElementsByTagName('script')[0]; psn.parentNode.insertBefore(sn, psn);
-            } else {
-                document.write(unescape('%3Cscri' + 'pt type="text/javascript" ' + 'src="' + t_js_load_src + ';"%3E%3C/sc' + 'ript%3E'));
-            }
-        })();
-        //]]>
-    </script>
-    <noscript><p><a href="http://www.trafic.ro/statistici/transeth.org"><img alt="transeth.org" src="http://log.trafic.ro/cgi-bin/pl.dll?rid=transeth-org" /></a></p></noscript>
-    <!--/End async trafic.ro/-->
+ 
 </head>
 <body style=" overflow: hidden; margin:0px !important; background-color:black">
     <div class="site-wrapper video-background">
@@ -234,6 +217,23 @@
         }, 3000);
 
     </script>
-
+    <!--/Start async trafic.ro/-->
+    <script type="text/javascript" id="trfc_trafic_script">
+        //<![CDATA[
+        t_rid = 'transeth-org';
+        (function () {
+            t_js_dw_time = new Date().getTime();
+            t_js_load_src = ((document.location.protocol == 'http:') ? 'http://storage.' : 'https://secure.') + 'trafic.ro/js/trafic.js?tk=' + (Math.pow(10, 16) * Math.random()) + '&t_rid=' + t_rid;
+            if (document.createElement && document.getElementsByTagName && document.insertBefore) {
+                t_as_js_en = true; var sn = document.createElement('script'); sn.type = 'text/javascript'; sn.async = true; sn.src = t_js_load_src;
+                var psn = document.getElementsByTagName('script')[0]; psn.parentNode.insertBefore(sn, psn);
+            } else {
+                document.write(unescape('%3Cscri' + 'pt type="text/javascript" ' + 'src="' + t_js_load_src + ';"%3E%3C/sc' + 'ript%3E'));
+            }
+        })();
+            //]]>
+    </script>
+    <noscript><p><a href="http://www.trafic.ro/statistici/transeth.org"><img alt="transeth.org" src="http://log.trafic.ro/cgi-bin/pl.dll?rid=transeth-org" /></a></p></noscript>
+    <!--/End async trafic.ro/-->
 </body>
 </html>
