@@ -34,12 +34,7 @@
     <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <style>
-        @media (max-width: 1000px) {
-            video {
-                display: none !important;
-            }
-        }
-
+     
         a {
             cursor: pointer !important;
         }
@@ -82,7 +77,7 @@
                                data-period="4000"
                                data-rotate='[ "We connect the experts required for transitioning analog organizations into the ethereal realm", "We develop, document and support Transeth`s open source code ecosystem", "We help organizations become carbon neutral by digitalizing their processes", "We offer organizations an intelligent edge and interconnection so that they can thrive","We eliminate intermediaries for Transeth`s ecosystem beneficiaries by implementing blockchain specific solutions","We promote and develop cluster-oriented policies at a global level in the field of IT&C","If we raised your interest continue exploring Transeth`s ecosystem :)" ]'></p>
                             <a href="./faq.html">
-                                <p id="continua_btn" style="border-radius: 25px; margin: auto; width: 170px; border: 3px solid white; padding: 10px; font-family: Roboto, sans-serif; font-weight: 500; font-size: 24px; letter-spacing:2px;">Transit?</p>
+                                <p id="continua_btn" style="border-radius: 25px; margin: auto; width: 190px; border: 3px solid white; padding: 10px; font-family: Roboto, sans-serif; font-weight: 500; font-size: 24px; letter-spacing:2px;">In Transit?</p>
                             </a>
                         </div>
                         <div class="mastfoot">
@@ -168,9 +163,7 @@
                 margin-top: 160px !important;
             }
 
-            video {
-                display: none !important;
-            }
+            
         }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6T9BGDM4"></script>
@@ -266,15 +259,15 @@
         }, 3000);
 
         $("#continua_btn").mouseover(function () {
-            $("#continua_btn").text("Continue");
+            $("#continua_btn").text("Accelerate!");
         });
 
         $("#continua_btn").mouseout(function () {
-            $("#continua_btn").text("Transit?");
+            $("#continua_btn").text("In Transit?");
         });
 
         $("a").mouseover(function () {
-            $("#myVideo").pause();
+            
             $("#logo").addClass("rotate");
             $("#logo").addClass("linear");
             $("#logo").addClass("infinite");
@@ -324,7 +317,7 @@
             }*/
 
         .rotate {
-            animation: rotation 2s;
+            animation: rotation 4s;
         }
 
         .linear {
