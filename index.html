@@ -40,70 +40,91 @@
             }
         }
 
-        a 
-        {
-            cursor:pointer !important;
+        a {
+            cursor: pointer !important;
         }
     </style>
 
- 
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://rawgit.com/almeida-matheus/fullPageScrollPureJS/master/app/assets/stylesheet/full-page-scroll.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans"
+          rel="stylesheet"
+          type="text/css" />
+
 </head>
 <body style=" overflow: hidden; margin:0px !important; background-color:black">
-    <div class="site-wrapper video-background">
-        <video src="./videos/load.mp4" autoplay muted id="myVideo"></video>
-        <div class="overlay"></div>
-        <div class="site-wrapper-inner">
-            <div class="masthead clearfix">
-                <div class="inner">
-                    <nav id="menu">
+    <div id="main" class="scroll-container">
+        <section class="section1">
+
+            <div class="site-wrapper video-background">
+                <video src="./videos/load.mp4" autoplay muted id="myVideo"></video>
+                <div class="overlay"></div>
+                <div class="site-wrapper-inner">
+                    <div class="masthead clearfix">
+                        <div class="inner">
+                            <nav id="menu">
+                                <ul class="nav masthead-nav">
+                                    <li><h3><a>Mission</a></h3></li>
+                                    <li><h3><a>Now</a></h3></li>
+                                    <li><h3><a>Ecosystem</a></h3></li>
+                                    <li><h3><a>Blog</a></h3></li>
+                                    <li><h3><a>FAQ</a></h3></li>
+                                    <li><h3><a>Be Part</a></h3></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="cover-container" style="cursor:default">
+                        <div class="inner cover">
+                            <div style="width:100%; float:left"><img src="./screenshots/logo.png" id="logo" style="width:100px; height:100px; margin-bottom:40px; margin-top:-120px;" /></div>
+                            <p style="height:110px; margin-top:40px; font-size:24px;" class="txt-rotate lead"
+                               data-period="4000"
+                               data-rotate='[ "We connect the experts required for transitioning analog organizations into the ethereal realm", "We develop, document and support Transeth`s open source code ecosystem", "We help organizations become carbon neutral by digitalizing their processes", "We offer organizations an intelligent edge and interconnection so that they can thrive","We eliminate intermediaries for Transeth`s ecosystem beneficiaries by implementing blockchain specific solutions","We promote and develop cluster-oriented policies at a global level in the field of IT&C","If we raised your interest continue exploring Transeth`s ecosystem :)" ]'></p>
+                            <a href="./faq.html">
+                                <p id="continua_btn" style="border-radius: 25px; margin: auto; width: 170px; border: 3px solid white; padding: 10px; font-family: Roboto, sans-serif; font-weight: 500; font-size: 24px; letter-spacing:2px;">Transit?</p>
+                            </a>
+                        </div>
+                        <div class="mastfoot">
+                            <div class="inner">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position: absolute; bottom: -20px; width:100%;">
+                        <a id="msft_url" href="./screenshots/Transeth MPN letter.pdf" target="_blank">
+                            <img src="./screenshots/Transeth MPN.png" style="display: block; margin-left: auto; margin-right: auto; width: 400px; height: 172px; margin-bottom: 10px;" />
+                        </a>
+                    </div>
+                    <nav style="position: absolute; top: 40px; left:20px; width:340px;">
                         <ul class="nav masthead-nav">
-                            <li><h3><a>Mission</a></h3></li>
-                            <li><h3><a>Now</a></h3></li>
-                            <li><h3><a>Ecosystem</a></h3></li>
-                            <li><h3><a>Blog</a></h3></li>
-                            <li><h3><a>FAQ</a></h3></li>
-                            <li><h3><a>Be Part</a></h3></li>
+                            <li><a href="https://www.linkedin.com/company/transeth-cluster" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                            <li style="margin-left:12px"><a href="https://github.com/Transeth" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="./screenshots/MPN Training Status.png" target="_blank"><i class="fas fa-award"></i></a></li>
+                            <li><a href="https://appsource.microsoft.com/en-us/marketplace/partner-dir/61cd44ba-1a86-46fc-92ab-5f92fc8df032/overview" target="_blank"><i class="fab fa-microsoft"></i></a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=org.Transeth.Cluster" target="_blank"><i class="fab fa-google-play"></i></a></li>
+                            <li><a href="https://discord.gg/DNyG4Ea9hM" target="_blank"><i class="fab fa-discord"></i></a></li>
+                            <li><a href="https://dao.transeth.org/#/" target="_blank"><i class="fas fa-balance-scale"></i></a></li>
+                            <!--<li><a href="./faq.html"><i class="far fa-question-circle"></i></a></li>-->
+
                         </ul>
                     </nav>
                 </div>
-            </div>
-            <div class="cover-container" style="cursor:default">
-                <div class="inner cover">
-                    <div style="width:100%; float:left"><img src="./screenshots/logo.png" id="logo" style="width:100px; height:100px; margin-bottom:40px; margin-top:-120px;" /></div>
-                    <p style="height:110px; margin-top:40px; font-size:24px;" class="txt-rotate lead"
-                       data-period="4000"
-                       data-rotate='[ "We connect the experts required for transitioning analog organizations into the ethereal realm", "We develop, document and support Transeth`s open source code ecosystem", "We help organizations become carbon neutral by digitalizing their processes", "We offer organizations an intelligent edge and interconnection so that they can thrive","We eliminate intermediaries for Transeth`s ecosystem beneficiaries by implementing blockchain specific solutions","We promote and develop cluster-oriented policies at a global level in the field of IT&C","If we raised your interest continue exploring Transeth`s ecosystem :)" ]'></p>
-                    <a href="./faq.html">
-                        <p id="continua_btn" style="border-radius: 25px; margin: auto; width: 170px; border: 3px solid white; padding: 10px; font-family: Roboto, sans-serif; font-weight: 500; font-size: 24px; letter-spacing:2px;">Transit?</p>
-                    </a>
-                </div>
-                <div class="mastfoot">
-                    <div class="inner">
-                    </div>
-                </div>
-            </div>
 
-            <div style="position: absolute; bottom: -20px; width:100%;">
-                <a id="msft_url" href="./screenshots/Transeth MPN letter.pdf" target="_blank">
-                    <img src="./screenshots/Transeth MPN.png" style="display: block; margin-left: auto; margin-right: auto; width: 400px; height: 172px; margin-bottom: 10px;" />
-                </a>
             </div>
-            <nav style="position: absolute; top: 40px; left:20px; width:340px;">
-                <ul class="nav masthead-nav">
-                    <li><a href="https://www.linkedin.com/company/transeth-cluster" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
-                    <li style="margin-left:12px"><a href="https://github.com/Transeth" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href="./screenshots/MPN Training Status.png" target="_blank"><i class="fas fa-award"></i></a></li>
-                    <li><a href="https://appsource.microsoft.com/en-us/marketplace/partner-dir/61cd44ba-1a86-46fc-92ab-5f92fc8df032/overview" target="_blank"><i class="fab fa-microsoft"></i></a></li>
-                    <li><a href="https://play.google.com/store/apps/details?id=org.Transeth.Cluster" target="_blank"><i class="fab fa-google-play"></i></a></li>
-                    <li><a href="https://discord.gg/DNyG4Ea9hM" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://dao.transeth.org/#/" target="_blank"><i class="fas fa-balance-scale"></i></a></li>
-                    <!--<li><a href="./faq.html"><i class="far fa-question-circle"></i></a></li>-->
-
-                </ul>
-            </nav>
-        </div>
-
+        </section>
+        <section class="section2">
+            <div>
+                <span> Getting </span>
+            </div>
+        </section>
+        <section class="section3">
+            <div>
+                <span> Ready </span>
+            </div>
+        </section>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script src="./js/device.min.js" defer></script>
@@ -111,6 +132,18 @@
     <script src="./js/custom.min.js" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,500&display=swap' rel="stylesheet" as="font" type='text/css'>
     <script src="https://kit.fontawesome.com/295455a59a.js" crossorigin="anonymous"></script>
+
+    <script src="https://rawgit.com/almeida-matheus/fullPageScrollPureJS/master/app/assets/javascript/full-page-scroll.js"></script>
+    <script type="text/javascript">
+        new fullScroll({
+            mainElement: "main",
+            displayDots: true,
+            dotsPosition: "right",
+            animateTime: 0.7,
+            animateFunction: "ease",
+        });
+    </script>
+
     <style>
         @media (max-width: 1000px) {
             .inner {
@@ -252,7 +285,7 @@
             $("#logo").removeClass("linear");
             $("#logo").removeClass("infinite");
         });
-        
+
 
     </script>
 
@@ -271,7 +304,7 @@
                 document.write(unescape('%3Cscri' + 'pt type="text/javascript" ' + 'src="' + t_js_load_src + ';"%3E%3C/sc' + 'ript%3E'));
             }
         })();
-        //]]>
+                        //]]>
     </script>
     <noscript><p><a href="http://www.trafic.ro/statistici/transeth.org"><img alt="transeth.org" src="http://log.trafic.ro/cgi-bin/pl.dll?rid=transeth-org" /></a></p></noscript>
     <!--/End async trafic.ro/-->
@@ -283,12 +316,12 @@
         }
 
         #menu a:hover {
-            text-decoration:underline;            
+            text-decoration: underline;
         }
-/*
-        i:hover {
-            color: #F6E70C;
-        }*/
+        /*
+            i:hover {
+                color: #F6E70C;
+            }*/
 
         .rotate {
             animation: rotation 2s;
