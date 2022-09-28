@@ -34,10 +34,15 @@
     <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <style>
-        .dots {
-            z-index:999;
+        @media (max-width: 1000px) {
+            video {
+                display: none !important;
+            }
         }
 
+        .dots {
+            z-index: 999;
+        }
 
         a {
             cursor: pointer !important;
@@ -57,7 +62,9 @@
         <section class="section1">
 
             <div class="site-wrapper video-background">
-                <video src="./videos/load.mp4" autoplay muted id="myVideo"></video>
+                <video autoplay muted id="myVideo">
+                    <source src="./videos/load.mp4" type="video/mp4">
+                </video>
                 <div class="overlay"></div>
                 <div class="site-wrapper-inner">
                     <div class="masthead clearfix">
@@ -138,9 +145,18 @@
             mainElement: "main",
             displayDots: true,
             dotsPosition: "right",
-            animateTime: 0.7,
+            animateTime: 0.6,
             animateFunction: "ease",
         });
+        var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.play();
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
     </script>
 
     <style>
@@ -167,7 +183,9 @@
                 margin-top: 160px !important;
             }
 
-            
+            video {
+                display: none !important;
+            }
         }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF6T9BGDM4"></script>
@@ -271,7 +289,7 @@
         });
 
         $("a").mouseover(function () {
-            
+            pauseVid();
             $("#logo").addClass("rotate");
             $("#logo").addClass("linear");
             $("#logo").addClass("infinite");
