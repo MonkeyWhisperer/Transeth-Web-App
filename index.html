@@ -39,6 +39,11 @@
                 display: none !important;
             }
         }
+
+        a 
+        {
+            cursor:pointer !important;
+        }
     </style>
 
  
@@ -52,17 +57,12 @@
                 <div class="inner">
                     <nav>
                         <ul class="nav masthead-nav">
-                            <li><a href="https://www.linkedin.com/company/transeth-cluster" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
-                            <li style="margin-left:12px"><a href="https://github.com/Transeth" target="_blank"><i class="fab fa-github"></i></a></li>
-                            <li><a href="./screenshots/MPN Training Status.png" target="_blank"><i class="fas fa-award"></i></a></li>
-                            <li><a href="https://appsource.microsoft.com/en-us/marketplace/partner-dir/61cd44ba-1a86-46fc-92ab-5f92fc8df032/overview" target="_blank"><i class="fab fa-microsoft"></i></a></li>
-                            <!--<li><a href="https://discord.gg/DNyG4Ea9hM" target="_blank"><i class="fab fa-discord"></i></a></li>-->
-                            <li><a href="https://play.google.com/store/apps/details?id=org.Transeth.Cluster" target="_blank"><i class="fab fa-google-play"></i></a></li>
-                            <!--<li><a href="#"><i class="fab fa-ethereum"></i></a></li>-->
-                            <li><a href="https://dao.transeth.org/#/" target="_blank"><i class="fas fa-balance-scale"></i></a></li>
-                            <!--<i class="fa-solid fa-award"></i>-->
-                            <li><a href="./faq.html"><i class="far fa-question-circle"></i></a></li>
-
+                            <li><h3><a>Mission</a></h3></li>
+                            <li><h3><a>Now</a></h3></li>
+                            <li><h3><a>Ecosystem</a></h3></li>
+                            <li><h3><a>Blog</a></h3></li>
+                            <li><h3><a>FAQ</a></h3></li>
+                            <li><h3><a>Be Part</a></h3></li>
                         </ul>
                     </nav>
                 </div>
@@ -74,7 +74,7 @@
                        data-period="4000"
                        data-rotate='[ "We connect the experts required for transitioning analog organizations into the ethereal realm", "We develop, document and support Transeth`s open source code ecosystem", "We help organizations become carbon neutral by digitalizing their processes", "We offer organizations an intelligent edge and interconnection so that they can thrive","We eliminate intermediaries for Transeth`s ecosystem beneficiaries by implementing blockchain specific solutions","We promote and develop cluster-oriented policies at a global level in the field of IT&C","If we raised your interest continue exploring Transeth`s ecosystem :)" ]'></p>
                     <a href="./faq.html">
-                        <p id="continua_btn" style="border-radius: 25px; margin: auto; width: 140px; border: 3px solid white; padding: 10px; font-family: Roboto, sans-serif; font-weight: 500; font-size: 24px; ">Continue</p>
+                        <p id="continua_btn" style="border-radius: 25px; margin: auto; width: 170px; border: 3px solid white; padding: 10px; font-family: Roboto, sans-serif; font-weight: 500; font-size: 24px; letter-spacing:2px;">Transit?</p>
                     </a>
                 </div>
                 <div class="mastfoot">
@@ -82,11 +82,25 @@
                     </div>
                 </div>
             </div>
+
             <div style="position: absolute; bottom: -20px; width:100%;">
                 <a id="msft_url" href="./screenshots/Transeth MPN letter.pdf" target="_blank">
                     <img src="./screenshots/Transeth MPN.png" style="display: block; margin-left: auto; margin-right: auto; width: 400px; height: 172px; margin-bottom: 10px;" />
                 </a>
             </div>
+            <nav style="position: absolute; top: 40px; left:20px; width:340px;">
+                <ul class="nav masthead-nav">
+                    <li><a href="https://www.linkedin.com/company/transeth-cluster" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                    <li style="margin-left:12px"><a href="https://github.com/Transeth" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="./screenshots/MPN Training Status.png" target="_blank"><i class="fas fa-award"></i></a></li>
+                    <li><a href="https://appsource.microsoft.com/en-us/marketplace/partner-dir/61cd44ba-1a86-46fc-92ab-5f92fc8df032/overview" target="_blank"><i class="fab fa-microsoft"></i></a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=org.Transeth.Cluster" target="_blank"><i class="fab fa-google-play"></i></a></li>
+                    <li><a href="https://discord.gg/DNyG4Ea9hM" target="_blank"><i class="fab fa-discord"></i></a></li>
+                    <li><a href="https://dao.transeth.org/#/" target="_blank"><i class="fas fa-balance-scale"></i></a></li>
+                    <!--<li><a href="./faq.html"><i class="far fa-question-circle"></i></a></li>-->
+
+                </ul>
+            </nav>
         </div>
 
     </div>
@@ -218,6 +232,27 @@
 
         }, 3000);
 
+        $("#continua_btn").mouseover(function () {
+            $("#continua_btn").text("Continue");
+        });
+
+        $("#continua_btn").mouseout(function () {
+            $("#continua_btn").text("Transit?");
+        });
+
+        $("a").mouseover(function () {
+            $("#logo").addClass("rotate");
+            $("#logo").addClass("linear");
+            $("#logo").addClass("infinite");
+        });
+
+        $("a").mouseout(function () {
+            $("#logo").removeClass("rotate");
+            $("#logo").removeClass("linear");
+            $("#logo").removeClass("infinite");
+        });
+        
+
     </script>
 
 
@@ -235,9 +270,33 @@
                 document.write(unescape('%3Cscri' + 'pt type="text/javascript" ' + 'src="' + t_js_load_src + ';"%3E%3C/sc' + 'ript%3E'));
             }
         })();
-    //]]>
+        //]]>
     </script>
     <noscript><p><a href="http://www.trafic.ro/statistici/transeth.org"><img alt="transeth.org" src="http://log.trafic.ro/cgi-bin/pl.dll?rid=transeth-org" /></a></p></noscript>
     <!--/End async trafic.ro/-->
+
+    <style>
+        .rotate {
+            animation: rotation 3s;
+        }
+
+        .linear {
+            animation-timing-function: linear;
+        }
+
+        .infinite {
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+    </style>
 </body>
 </html>
