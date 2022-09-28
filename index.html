@@ -69,7 +69,7 @@
             </div>
             <div class="cover-container" style="cursor:default">
                 <div class="inner cover">
-                    <div style="width:100%; float:left"><img src="./screenshots/logo.png" id="logo" style="width:100px; height:100px; margin-bottom:40px; margin-top:-120px;" /></div>
+                    <div style="width:100%; float:left"><img src="./screenshots/logo.png" id="logo" style="width:140px; height:140px; margin-bottom:40px; margin-top:-120px;" /></div>
                     <p style="height:110px; margin-top:40px; font-size:24px;" class="txt-rotate lead"
                        data-period="4000"
                        data-rotate='[ "We connect the experts required for transitioning analog organizations into the ethereal realm", "We develop, document and support Transeth`s open source code ecosystem", "We help organizations become carbon neutral by digitalizing their processes", "We offer organizations an intelligent edge and interconnection so that they can thrive","We eliminate intermediaries for Transeth`s ecosystem beneficiaries by implementing blockchain specific solutions","We promote and develop cluster-oriented policies at a global level in the field of IT&C","If we raised your interest continue exploring Transeth`s ecosystem :)" ]'></p>
@@ -241,6 +241,7 @@
         });
 
         $("a").mouseover(function () {
+            $("#myVideo").pause();
             $("#logo").addClass("rotate");
             $("#logo").addClass("linear");
             $("#logo").addClass("infinite");
@@ -276,6 +277,14 @@
     <!--/End async trafic.ro/-->
 
     <style>
+        a:hover {
+            color: #F6E70C;
+        }
+
+        i:hover {
+            color: #F6E70C;
+        }
+
         .rotate {
             animation: rotation 3s;
         }
