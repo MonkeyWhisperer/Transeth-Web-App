@@ -55,7 +55,7 @@
         <div class="site-wrapper-inner">
             <div class="masthead clearfix">
                 <div class="inner">
-                    <nav>
+                    <nav id="menu">
                         <ul class="nav masthead-nav">
                             <li><h3><a>Mission</a></h3></li>
                             <li><h3><a>Now</a></h3></li>
@@ -278,8 +278,12 @@
 
     <style>
         a:hover {
-            color: #F6E70C;
-            opacity: 1;
+            /*color: #F6E70C;*/
+            opacity: 1 !important;
+        }
+
+        #menu a:hover {
+            text-decoration:underline;
         }
 
         i:hover {
@@ -287,7 +291,7 @@
         }
 
         .rotate {
-            animation: rotation 3s;
+            animation: rotation 2s;
         }
 
         .linear {
