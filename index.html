@@ -88,9 +88,11 @@
                             <p style="height:110px; margin-top:40px; font-size:24px;" class="txt-rotate lead"
                                data-period="4000"
                                data-rotate='[ "We connect the experts required for transitioning analog organizations into the ethereal realm", "We develop, document and support Transeth`s open source code ecosystem", "We help organizations become carbon neutral by digitalizing their processes", "We offer organizations an intelligent edge and interconnection so that they can thrive","We eliminate intermediaries for Transeth`s ecosystem beneficiaries by implementing blockchain specific solutions","We promote and develop cluster-oriented policies at a global level in the field of IT&C","If we raised your interest continue exploring Transeth`s ecosystem :)" ]'></p>
-                            <a href="./faq.html">
-                                <p id="continua_btn" style="border-radius: 25px; margin: auto; width: 190px; border: 3px solid white; padding: 10px; font-family: Roboto, sans-serif; font-weight: 500; font-size: 24px; letter-spacing:2px;">In Transit?</p>
-                            </a>
+                            <div style="width: 190px !important; margin: 0 auto">
+                                <a href="./faq.html" style="" >
+                                    <p id="continua_btn" style="border-radius: 25px; margin: auto; width: 100% !important; border: 3px solid white; padding: 10px; font-family: Roboto, sans-serif; font-weight: 500; font-size: 24px; letter-spacing:2px;">In Transit?</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="mastfoot">
                             <div class="inner">
@@ -290,14 +292,14 @@
         });
 
         $("a").mouseover(function () {
-            pauseVid();
+            //pauseVid();
             $("#logo").addClass("rotate");
             $("#logo").addClass("linear");
             $("#logo").addClass("infinite");
         });
 
         $("a").mouseout(function () {
-            playVid();
+            //playVid();
             $("#logo").removeClass("rotate");
             $("#logo").removeClass("linear");
             $("#logo").removeClass("infinite");
