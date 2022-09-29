@@ -84,7 +84,7 @@
                     </div>
                     <div class="cover-container" style="cursor:default">
                         <div class="inner cover">
-                            <div style="width:100%; float:left"><img src="./screenshots/logo.png" id="logo" style="width:100px; height:100px; margin-bottom:40px; margin-top:-120px;" /></div>
+                            <div style="width:100%; float:left"><img src="./screenshots/logo.png" class="rotate-slow linear infinite" id="logo" style="width:100px; height:100px; margin-bottom:40px; margin-top:-120px;" /></div>
                             <p style="height:110px; margin-top:40px; font-size:24px;" class="txt-rotate lead"
                                data-period="4000"
                                data-rotate='[ "We connect the experts required for transitioning analog organizations into the ethereal realm", "We develop, document and support Transeth`s open source code ecosystem", "We help organizations become carbon neutral by digitalizing their processes", "We offer organizations an intelligent edge and interconnection so that they can thrive","We eliminate intermediaries for Transeth`s ecosystem beneficiaries by implementing blockchain specific solutions","We promote and develop cluster-oriented policies at a global level in the field of IT&C","If we raised your interest continue exploring Transeth`s ecosystem :)" ]'></p>
@@ -371,17 +371,19 @@
         });
 
         $("#continua_btn").mouseover(function () {
-            //pauseVid();
-            $("#logo").addClass("rotate");
-            $("#logo").addClass("linear");
-            $("#logo").addClass("infinite");
+            //pauseVid();            
+            $("#logo").addClass("rotate-fast");
+            $("#logo").removeClass("rotate-slow");
+            //$("#logo").addClass("linear");
+            //$("#logo").addClass("infinite");
         });
 
         $("#continua_btn").mouseout(function () {
             //playVid();
-            $("#logo").removeClass("rotate");
-            $("#logo").removeClass("linear");
-            $("#logo").removeClass("infinite");
+            $("#logo").removeClass("rotate-fast");
+            $("#logo").addClass("rotate-slow");
+            //$("#logo").removeClass("linear");
+            //$("#logo").removeClass("infinite");
         });
 
 
@@ -421,8 +423,12 @@
                 color: #F6E70C;
             }*/
 
-        .rotate {
-            animation: rotation 4s;
+        .rotate-slow {
+            animation: rotation 10s;
+        }
+
+        .rotate-fast {
+            animation: rotation 2s;
         }
 
         .linear {
