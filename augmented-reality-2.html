@@ -11,7 +11,10 @@
 	<body style="margin: 0; overflow: hidden;">
 		<div style="margin: 0 0 0 2em">
 			<!-- <p>Thanks to <a href="https://github.com/stemkoski">Lee Stemkoski</a> for the AR.js examples and <a href="https://free3d.com/user/ideastudio">Glen Campbell</a> for the globe.</p> -->
-			<!--<p>If you need a marker and don't have my business card, use the kanji symbol <a href="https://stemkoski.github.io/AR-Examples/markers/kanji.png">here</a>. </p>-->
+			<!--<p>If you need a marker and don't have my business card, use the kanji symbol <a href="https://stemkoski.github.io/AR-Examples/markers/kanji.png">here</a>. </p>
+			<p>
+				If you're not asked to share your camera or nothing pops up file an issue in the <a href="https://github.com/JustinGOSSES/AR_BusinessCard">github repository</a>.
+			</p>-->
 		</div>
         <a-scene
             vr-mode-ui="enabled: false;"
@@ -25,7 +28,7 @@
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
-                    src="assets/asset.gltf"
+                    src="assets/a.glb"
                 ></a-asset-item>
             </a-assets>
 
@@ -44,7 +47,7 @@
                     id="bowser-model"
                     scale="2.0807670978206919 3.6807670978206919 2.0807670978206919"
                     animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
+                    glb-model="#animated-asset"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
