@@ -16,20 +16,16 @@
 				If you're not asked to share your camera or nothing pops up file an issue in the <a href="https://github.com/JustinGOSSES/AR_BusinessCard">github repository</a>.
 			</p>-->
 		</div>
-        <a-scene
-            vr-mode-ui="enabled: false;"
-            loading-screen="enabled: false;"
-            renderer="logarithmicDepthBuffer: true;"
-            arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
-            id="scene"
-            embedded
-            gesture-detector
-        >
+        <a-scene vr-mode-ui="enabled: false;"
+                 loading-screen="enabled: false;"
+                 renderer="logarithmicDepthBuffer: true;"
+                 arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+                 id="scene"
+                 embedded
+                 gesture-detector>
             <a-assets>
-                <a-asset-item
-                    id="animated-asset"
-                    src="assets/vazduh.glb"
-                ></a-asset-item>
+                <a-asset-item id="animated-asset"
+                              src="assets/vazduh.glb"></a-asset-item>
             </a-assets>
 
             <a-marker id="animated-marker"
@@ -45,9 +41,30 @@
                           gltf-model="#animated-asset"
                           class="clickable"
                           gesture-handler
-                          rotation="-90 0 0"
-                          ></a-entity>
-                 
+                          rotation="-90 0 0"></a-entity>
+
+            </a-marker>
+
+            <a-assets>
+                <a-asset-item id="animated-asset"
+                              src="assets/emip.glb"></a-asset-item>
+            </a-assets>
+
+            <a-marker id="animated-marker"
+                      type="pattern"
+                      preset="custom"
+                      url="assets/marker-emip.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;">
+                <a-entity id="bowser-model"
+                          scale="0.02 0.02 0.02"
+                          animation-mixer="loop: repeat"
+                          gltf-model="#animated-asset"
+                          class="clickable"
+                          gesture-handler
+                          rotation="0 0 0"></a-entity>
+
             </a-marker>
 
             <a-entity camera></a-entity>
