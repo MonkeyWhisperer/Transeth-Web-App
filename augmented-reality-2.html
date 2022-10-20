@@ -32,23 +32,22 @@
                 ></a-asset-item>
             </a-assets>
 
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/marker.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-            >
-                <a-entity
-                    id="bowser-model"
-                    scale="0.02 0.02 0.02"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
-                    class="clickable"
-                    gesture-handler
-                ></a-entity>
+            <a-marker id="animated-marker"
+                      type="pattern"
+                      preset="custom"
+                      url="assets/marker.patt"
+                      raycaster="objects: .clickable"
+                      emitevents="true"
+                      cursor="fuse: false; rayOrigin: mouse;">
+                <a-entity id="bowser-model"
+                          scale="0.01 0.01 0.01"
+                          animation-mixer="loop: repeat"
+                          gltf-model="#animated-asset"
+                          class="clickable"
+                          gesture-handler
+                          position="0 0.347 -4" rotation="0 60 -1"
+                          ></a-entity>
+                 
             </a-marker>
 
             <a-entity camera></a-entity>
