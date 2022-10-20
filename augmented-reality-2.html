@@ -42,11 +42,11 @@
             </a-marker>
 
             <a-assets>
-                <a-asset-item id="animated-asset"
+                <a-asset-item id="animated-asset-2"
                               src="assets/emip.glb"></a-asset-item>
             </a-assets>
 
-            <a-marker id="animated-marker"
+            <a-marker id="animated-marker-2"
                       type="pattern"
                       preset="custom"
                       url="assets/marker-emip.patt"
@@ -54,12 +54,12 @@
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;">
                 <a-entity id="bowser-model"
-                          scale="0.02 0.02 0.02"
-                          animation-mixer="loop: repeat"
-                          gltf-model="#animated-asset"
+                          scale="0.4 0.4 0.4"
+                          gltf-model="#animated-asset-2"
                           class="clickable"
                           gesture-handler
-                          rotation="0 0 0"></a-entity>
+                          position="-1.8 -1.8 1"
+                          rotation="240 180 180"></a-entity>
 
             </a-marker>
 
