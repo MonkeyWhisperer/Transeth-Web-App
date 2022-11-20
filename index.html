@@ -106,6 +106,23 @@
 
     </div>-->
 
+    <div style="position:absolute; height:100%; width:100%; background-color:black; z-index:9999; display:none;" id="menu_mobile">
+        <div>
+            <a onclick="CloseMenu()">
+                <i class="fa fa-xmark fa-2x float-right" style="margin-top:20px; margin-right:20px;"></i>
+            </a>
+        </div>
+
+        <div style="width:100%; float:left; margin-top:20px"><img src="./screenshots/logo.png" class="rotate-slow linear infinite" id="logo" style="width:100px; height:100px; margin-bottom:40px;  " /></div>
+
+        <h2><a>Mission</a></h2>
+        <h2><a>Now</a></h2>
+        <h2><a>Ecosystem</a></h2>
+        <h2><a>Blog</a></h2>
+        <h2><a>FAQ</a></h2>
+        <h2><a>Be Part</a></h2>
+    </div>
+
     <div id="main" class="scroll-container">
         <section class="section1">
 
@@ -153,7 +170,7 @@
                             <img src="./screenshots/Transeth MPN.png" style="display: block; margin-left: auto; margin-right: auto; width: 400px; height: 172px; margin-bottom: 10px;" />
                         </a>
                     </div>
-                    <nav style="position: absolute; top: 20px; left:20px; width:260px;" class="icon_menu">
+                    <nav style="position: absolute; top: 20px; left:20px; width:300px;" class="icon_menu">
                         <ul class="nav masthead-nav">
                             <li><a href="https://www.linkedin.com/company/transeth-cluster" target="_blank" rel="nofollow noreferrer"><i class="fa fa-linkedin fa-fw"></i></a></li>
                             <li style="margin-left:12px"><a href="https://github.com/Transeth" target="_blank" rel="nofollow noreferrer"><i class="fab fa-github"></i></a></li>
@@ -163,6 +180,7 @@
                             <li style="margin-left: 15px;"><a href="https://discord.gg/DNyG4Ea9hM" target="_blank" rel="nofollow noreferrer"><i class="fab fa-discord"></i></a></li>
                             <!--<li>--><!--<a href="https://dao.transeth.org/#/" target="_blank"><i class="fas fa-balance-scale"></i></a>--><!--</li>-->
                             <li style="margin-left: 15px;"><a href="./faq.html"><i class="far fa-question-circle"></i></a></li>
+                            <li style="margin-left: 15px;"><a onclick="OpenMenu()"><i class="fa fa-bars"></i></a></li>
 
 
                         </ul>
@@ -188,7 +206,7 @@
                             </nav>
                         </div>
                     </div>
-                    <nav style="position: relative; top: 20px; left: 20px; width: 260px;" class="icon_menu">
+                    <nav style="position: relative; top: 20px; left: 20px; width: 300px;" class="icon_menu">
                         <ul class="nav masthead-nav">
                             <li><a href="https://www.linkedin.com/company/transeth-cluster" target="_blank" rel="nofollow noreferrer"><i class="fa fa-linkedin fa-fw"></i></a></li>
                             <li style="margin-left:12px"><a href="https://github.com/Transeth" target="_blank" rel="nofollow noreferrer"><i class="fab fa-github"></i></a></li>
@@ -198,6 +216,8 @@
                             <li style="margin-left: 15px;"><a href="https://discord.gg/DNyG4Ea9hM" target="_blank" rel="nofollow noreferrer"><i class="fab fa-discord"></i></a></li>
                             <!--<li>--><!--<a href="https://dao.transeth.org/#/" target="_blank"><i class="fas fa-balance-scale"></i></a>--><!--</li>-->
                             <li style="margin-left: 15px;"><a href="./faq.html"><i class="far fa-question-circle"></i></a></li>
+                            <li style="margin-left: 15px;"><a onclick="OpenMenu()"><i class="fa fa-bars"></i></a></li>
+
                         </ul>
                     </nav>
                 </div>
@@ -393,7 +413,7 @@
     <!--<script src="./js/jquery.countdown.min.js"></script>-->
     <script src="./js/custom.min.js" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,500&display=swap' rel="stylesheet" as="font" type='text/css'>
-    <script src="https://kit.fontawesome.com/295455a59a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/187af6549c.js" crossorigin="anonymous"></script>
 
     <script src="https://rawgit.com/almeida-matheus/fullPageScrollPureJS/master/app/assets/javascript/full-page-scroll.js"></script>
     <script type="text/javascript">
@@ -597,6 +617,16 @@
             //$("#logo").removeClass("infinite");
         });
 
+        function OpenMenu()
+        {
+            $("#menu_mobile").show();
+        }
+
+        function CloseMenu() {
+            $("#menu_mobile").hide();
+        }
+
+        
 
     </script>
 
