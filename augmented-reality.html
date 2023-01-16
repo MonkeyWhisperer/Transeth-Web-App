@@ -55,6 +55,24 @@
                               src="assets/vazduh.glb"></a-asset-item>
             </a-assets>
 
+            <!--<a-marker id="animated-marker"
+              type="pattern"
+              preset="custom"
+              url="assets/marker.patt"
+              raycaster="objects: .clickable"
+              emitevents="true"
+              cursor="fuse: false; rayOrigin: mouse;">
+        <a-entity id="bowser-model"
+                  scale="0.02 0.02 0.02"
+                  animation-mixer="loop: repeat"
+                  gltf-model="#animated-asset"
+                  class="clickable"
+                  gesture-handler
+                  rotation="-90 0 0"></a-entity>
+
+    </a-marker>-->
+
+
             <a-marker id="animated-marker"
                       type="pattern"
                       preset="custom"
@@ -63,12 +81,12 @@
                       emitevents="true"
                       cursor="fuse: false; rayOrigin: mouse;">
                 <a-entity id="bowser-model"
-                          scale="0.02 0.02 0.02"
+                          scale="0.2 0.2 0.2"
                           animation-mixer="loop: repeat"
                           gltf-model="#animated-asset"
                           class="clickable"
                           gesture-handler
-                          rotation="-90 0 0"></a-entity>
+                          rotation="0 0 0"></a-entity>
 
             </a-marker>
 
@@ -89,9 +107,8 @@
                           gltf-model="#animated-asset-2"
                           class="clickable"
                           animation-mixer="loop: repeat"
-                          
                           gesture-handler
-                         rotation="-90 0 0"></a-entity>
+                          rotation="-90 0 0"></a-entity>
 
             </a-marker>
 
