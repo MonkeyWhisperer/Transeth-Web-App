@@ -39,82 +39,79 @@
     <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
 </head>
 
-	<body style="margin: 0; overflow: hidden;">
-        
-		<div style="margin: 50px 0 0 0; background-color:black; width:100% !important" >
-		
-		</div>
-        <a-scene style="margin-top:50px;" vr-mode-ui="enabled: false;"
-                 loading-screen="enabled: false;"
-                 renderer="logarithmicDepthBuffer: true;"
-                 device-orientation-permission-ui="enabled: false"
-                 
-                 id="scene"
-                 embedded
-                 gesture-detector>
-            <a-assets>
-                <a-asset-item id="animated-asset"
-                              src="assets/vazduh.glb"></a-asset-item>
-            </a-assets>
+<body style="margin: 0; overflow: hidden;">
+    <div style="margin: 0 0 0 2em">
 
-            <!--<a-marker id="animated-marker"
-              type="pattern"
-              preset="custom"
-              url="assets/marker.patt"
-              raycaster="objects: .clickable"
-              emitevents="true"
-              cursor="fuse: false; rayOrigin: mouse;">
-        <a-entity id="bowser-model"
-                  scale="0.02 0.02 0.02"
-                  animation-mixer="loop: repeat"
-                  gltf-model="#animated-asset"
-                  class="clickable"
-                  gesture-handler
-                  rotation="-90 0 0"></a-entity>
+    </div>
+    <a-scene vr-mode-ui="enabled: false;"
+             loading-screen="enabled: false;"
+             renderer="logarithmicDepthBuffer: true;"
+             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+             id="scene"
+             embedded
+             gesture-detector>
+        <a-assets>
+            <a-asset-item id="animated-asset"
+                          src="assets/vazduh.glb"></a-asset-item>
+        </a-assets>
 
-    </a-marker>-->
+        <!--<a-marker id="animated-marker"
+                  type="pattern"
+                  preset="custom"
+                  url="assets/marker.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-entity id="bowser-model"
+                      scale="0.02 0.02 0.02"
+                      animation-mixer="loop: repeat"
+                      gltf-model="#animated-asset"
+                      class="clickable"
+                      gesture-handler
+                      rotation="-90 0 0"></a-entity>
+        </a-marker>-->
 
 
-            <a-marker id="animated-marker"
-                      type="pattern"
-                      preset="custom"
-                      url="assets/marker.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;">
-                <a-entity id="bowser-model"
-                          scale="0.22 0.22 0.22"
-                          animation-mixer="loop: repeat"
-                          gltf-model="#animated-asset"
-                          class="clickable"
-                          gesture-handler
-                          rotation="90 0 0"></a-entity>
+        <a-marker id="animated-marker"
+                  type="pattern"
+                  preset="custom"
+                  url="assets/marker.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-entity id="bowser-model"
+                      scale="0.22 0.22 0.22"
+                      animation-mixer="loop: repeat"
+                      gltf-model="#animated-asset"
+                      class="clickable"
+                      gesture-handler
+                      rotation="90 0 0"></a-entity>
 
-            </a-marker>
+        </a-marker>
 
-            <a-assets>
-                <a-asset-item id="animated-asset-2"
-                              src="assets/emip.glb"></a-asset-item>
-            </a-assets>
+        <a-assets>
+            <a-asset-item id="animated-asset-2"
+                          src="assets/emip.glb"></a-asset-item>
+        </a-assets>
 
-            <a-marker id="animated-marker-2"
-                      type="pattern"
-                      preset="custom"
-                      url="assets/marker-emip.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;">
-                <a-entity id="bowser-model-2"
-                          scale="5 5 5"
-                          gltf-model="#animated-asset-2"
-                          class="clickable"
-                          animation-mixer="loop: repeat"
-                          gesture-handler
-                          rotation="-90 0 0"></a-entity>
+        <a-marker id="animated-marker-2"
+                  type="pattern"
+                  preset="custom"
+                  url="assets/marker-emip.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-entity id="bowser-model-2"
+                      scale="5 5 5"
+                      gltf-model="#animated-asset-2"
+                      class="clickable"
+                      animation-mixer="loop: repeat"
+                      gesture-handler
+                      rotation="-90 0 0"></a-entity>
 
-            </a-marker>
+        </a-marker>
 
-            <a-entity camera style="margin-top:50px;"></a-entity>
-        </a-scene>
-    </body>
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
 </html>
