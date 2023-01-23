@@ -420,7 +420,6 @@
 
     <script src="https://rawgit.com/almeida-matheus/fullPageScrollPureJS/master/app/assets/javascript/full-page-scroll.js"></script>
     <script type="text/javascript">
-        invokeNativeAction("AUTH|param2");
 
         new fullScroll({
             mainElement: "main",
@@ -699,5 +698,11 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+
+    <script>
+        setTimeout(function () { invokeNativeAction("AUTH|param2");  }, 2000);
+        
+
+    </script>
 </body>
 </html>
